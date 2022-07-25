@@ -1,0 +1,14 @@
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--footer-height);
+  background-color: var(--clr-bg-primary);
+  box-shadow: 0 2px 2px 2px var(--clr-shadow);
+
+  &__copyright {
+    color: var(--clr-text-secondary);
+    font-weight: 500;
+  }
+}
