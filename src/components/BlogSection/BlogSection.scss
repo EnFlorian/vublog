@@ -1,0 +1,13 @@
+.blog-section {
+  flex: 1;
+  margin-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__cards-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
