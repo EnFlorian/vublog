@@ -5,7 +5,6 @@ import { BlogSection, HeaderSection, Navbar, Sidebar } from "../../components";
 const Home = () => {
   return (
     <Fragment>
-      <Navbar />
       <HeaderSection />
       <div className="home-container">
         <BlogSection />
