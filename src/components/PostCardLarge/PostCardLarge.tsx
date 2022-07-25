@@ -6,7 +6,7 @@ const PostCardLarge = ({ id, title, summary, author, createdAt, image }: IPost) 
   return (
     <section className="post-card-large">
       <div className="post-card-large-content">
-        <img src={image} alt="" className="big-card__image" />
+        <img src={image} alt="" className="post-card-large__image" />
       </div>
       <section className="post-card-large__right-content">
         <Link to={`/post/${id}`}>
