@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { About, Contact, Home, NotFound } from "./pages";
-import { Navbar } from "./components";
+import { Footer, Navbar } from "./components";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

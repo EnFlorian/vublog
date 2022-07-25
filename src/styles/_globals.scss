@@ -5,6 +5,7 @@
 
   --navbar-height: 60px;
   --footer-height: 60px;
+  --sidebar-width: 300px;
 
   --box-shadow-primary: 1px 1px 8px var(--clr-shadow);
   --box-shadow-hover: 4px 4px 8px var(--clr-shadow);
@@ -52,7 +53,10 @@ html[data-theme="dark"] {
 
   --clr-accent-primary: hsl(32, 90%, 65%);
   --clr-accent-secondary: hsl(32, 90%, 65%);
-  --clr-accent-tertiary: hsl(32, 90%, 60%);
+  --clr-accent-tertiary: hsl(30, 65%, 55%);
+}
+
+.body {
 }
 
 /* Scrollbar */
