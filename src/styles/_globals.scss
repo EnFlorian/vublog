@@ -67,19 +67,19 @@ html[data-theme="dark"] {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--clr-lighter);
+  background: var(--clr-bg-primary);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--clr-dark);
+  background: var(--clr-accent-primary);
   height: 2rem;
   /* border-radius: 1rem; */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--clr-dark);
+  background: var(--clr-accent-primary);
 }
 
 .container {
