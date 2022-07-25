@@ -3,6 +3,8 @@ import "./BaseButton.scss";
 interface IBaseButtonProps {
   variant: "primary" | "secondary";
   name: string;
+  children: React.ReactNode;
+  onClick?: () => void;
 }
 
 const BaseButton = ({ variant, name }: IBaseButtonProps) => {

@@ -1,0 +1,35 @@
+.base-button {
+  margin: 0.1rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition-fast);
+
+  &--primary {
+    background-color: var(--clr-accent-secondary);
+    border: 3px solid var(--clr-accent-secondary);
+    color: var(--clr-text-neutral);
+
+    &:hover {
+      background-color: var(--clr-bg-tertiary);
+      border-color: var(--clr-bg-tertiary);
+      color: var(--clr-text-primary);
+    }
+  }
+
+  &--secondary {
+    border: 3px solid var(--clr-bg-tertiary);
+    color: var(--clr-text-primary);
+    background-color: var(--clr-bg-primary);
+
+    &:hover {
+      border-color: var(--clr-accent-secondary);
+      color: var(--clr-accent-secondary);
+    }
+  }
+}
