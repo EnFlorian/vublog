@@ -1,7 +1,8 @@
 export interface IUIStore {
-  darkMode: boolean;
+  isDarkMode: boolean;
   isLoading: boolean;
   setIsLoading: (isLoading: boolean) => void;
+  toggleDarkMode: () => void;
 }
 
 export interface Author {
@@ -23,5 +24,5 @@ export interface IPost {
 
 export interface IPostsStore {
   posts: IPost[];
-  setPosts: (posts: any[]) => void;
+  setPosts: (posts: IPost[]) => void;
 }

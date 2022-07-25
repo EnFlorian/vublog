@@ -1,7 +1,12 @@
 import "./BaseButton.scss";
 
-const BaseButton = () => {
-  return <div>BaseButton</div>;
+interface IBaseButtonProps {
+  variant: "primary" | "secondary";
+  name: string;
+}
+
+const BaseButton = ({ variant, name }: IBaseButtonProps) => {
+  return <button className={`base-button base-button--${variant}`}>{name}</button>;
 };
 
 export default BaseButton;

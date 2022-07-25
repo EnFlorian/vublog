@@ -6,6 +6,8 @@ import HeaderSection from "./HeaderSection/HeaderSection";
 import Navbar from "./Navbar/Navbar";
 import NewsLetter from "./NewsLetter/NewsLetter";
 import PostCardLarge from "./PostCardLarge/PostCardLarge";
+import PostCardMedium from "./PostCardMedium/PostCardMedium";
+import Sidebar from "./Sidebar/Sidebar";
 import Socials from "./Socials/Socials";
 import ThemeSwitch from "./ThemeSwitch/ThemeSwitch";
 
@@ -18,6 +20,8 @@ export {
   Navbar,
   NewsLetter,
   PostCardLarge,
+  PostCardMedium,
+  Sidebar,
   Socials,
   ThemeSwitch,
 };
