@@ -6,10 +6,12 @@ const Home = () => {
   return (
     <Fragment>
       <HeaderSection />
-      <div className="home-container">
-        <BlogSection />
-        <Sidebar />
-      </div>
+      <section className="home">
+        <div className="container home__wrapper">
+          <BlogSection />
+          <Sidebar />
+        </div>
+      </section>
     </Fragment>
   );
 };

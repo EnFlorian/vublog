@@ -1,0 +1,11 @@
+.home {
+  padding: 4rem 0;
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--clr-bg-secondary);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
