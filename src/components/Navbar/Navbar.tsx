@@ -14,7 +14,7 @@ const Navbar = () => {
     <header className="navbar">
       <section className="navbar__wrapper container">
         <h1 className="navbar__logo">
-          <NavLink to="/">Personal Blog</NavLink>
+          <NavLink to="/">VuBlog</NavLink>
         </h1>
         <nav>
           <ul className="navbar__nav-links">
