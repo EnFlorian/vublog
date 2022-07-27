@@ -9,14 +9,14 @@ const HeaderSection = () => {
       <div className="header-section__wrapper container">
         <section className="header-section__left-content">
           <h1 className="header-section__title">
-            Hi, I'm <span className="header-section__accent">Akira Baumminger</span>,
+            Hi, I'm <span className="header-section__accent">Akira Bauer</span>,
             <br />
-            Graphics Designer based in Linz
+            Software Developer based in Linz
           </h1>
           <p className="header-section__subtitle"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <div className="header-section__buttons">
-            <Link to="/">
-              <BaseButton variant="primary" name="Contact Me">
+            <Link to="/posts">
+              <BaseButton variant="primary" name="Read More">
                 Home
               </BaseButton>
             </Link>
@@ -29,7 +29,7 @@ const HeaderSection = () => {
         </section>
         <section className="header-section__right-content">
           <div className="header-section__image-wrapper">
-            <img src={avatar} alt="avatar" className="header-section__image" />
+            <img src={avatar} width="320" height="320" alt="avatar" className="header-section__image" />
           </div>
         </section>
       </div>
