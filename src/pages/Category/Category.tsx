@@ -7,16 +7,16 @@ import "./Category.scss";
 
 const Category = () => {
   const { posts } = usePostStore((state) => state);
-  const [filteredPosts, setFilteredPosts] = useState(posts);
+  const [renderedPosts, setRenderedPosts] = useState(posts);
   const [loading, setLoading] = useState(true);
   const { category } = useParams();
 
   useEffect(() => {
-    setFilteredPosts(posts.filter((post) => post.category.toLowerCase() === category?.toLowerCase()));
+    setRenderedPosts(posts.filter((post) => post.category.toLowerCase() === category?.toLowerCase()));
     setLoading(false);
   }, [posts, category]);
 
-  const cards = filteredPosts.map((post, idx) => {
+  const cards = renderedPosts.map((post, idx) => {
     return (
       <li key={idx} className="category__post">
         <PostCardMedium {...post} />

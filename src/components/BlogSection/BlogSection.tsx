@@ -9,9 +9,11 @@ import BaseButton from "../BaseButton/BaseButton";
 const BlogSection = () => {
   const { posts } = usePostStore((state) => state);
   const [renderedPosts, setRenderedPosts] = useState<IPost[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setRenderedPosts(posts.slice(0, 4));
+    setLoading(false);
   }, []);
 
   const cards = renderedPosts.map((post, idx) => {
@@ -19,7 +21,9 @@ const BlogSection = () => {
   });
 
   const loadMore = () => {
+    setLoading(true);
     setRenderedPosts([...renderedPosts, ...posts.slice(renderedPosts.length, renderedPosts.length + 3)]);
+    setLoading(false);
   };
 
   const loadLess = () => {

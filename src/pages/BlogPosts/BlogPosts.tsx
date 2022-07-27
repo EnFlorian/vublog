@@ -1,19 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { PuffLoader } from "react-spinners";
 import { PostCardMedium, SectionDivider } from "../../components";
 import { usePostStore } from "../../state/store";
+import { IPost } from "../../state/types";
 import "./BlogPosts.scss";
 
 const BlogPosts = () => {
   const { posts } = usePostStore((state) => state);
+  const [renderedPosts, setRenderedPosts] = useState<IPost[]>();
+  const [loading, setLoading] = useState(true);
 
-  const categories = posts.reduce((acc, post) => {
+  useEffect(() => {
+    setRenderedPosts(posts);
+    setLoading(false);
+  }, [posts]);
+
+  const categories = renderedPosts?.reduce((acc, post) => {
     if (!acc.includes(post.category)) {
       acc.push(post.category);
     }
     return acc;
   }, [] as string[]);
 
-  const sections = categories.map((category, index) => {
+  const sections = categories?.map((category, index) => {
     return (
       <section key={index}>
         <SectionDivider title={category} />
@@ -34,7 +43,7 @@ const BlogPosts = () => {
 
   return (
     <section className="blog-posts">
-      <div className="blog-posts__wrapper container">{sections}</div>
+      {!loading ? <div className="blog-posts__wrapper container">{sections}</div> : <PuffLoader size={100} />}
     </section>
   );
 };
