@@ -1,13 +1,20 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { PuffLoader } from "react-spinners";
 import { PostCardMedium, SectionDivider } from "../../components";
 import { usePostStore } from "../../state/store";
 import "./Category.scss";
 
 const Category = () => {
   const { posts } = usePostStore((state) => state);
+  const [filteredPosts, setFilteredPosts] = useState(posts);
+  const [loading, setLoading] = useState(true);
   const { category } = useParams();
 
-  const filteredPosts = posts.filter((post) => post.category.toLowerCase() === category?.toLowerCase());
+  useEffect(() => {
+    setFilteredPosts(posts.filter((post) => post.category.toLowerCase() === category?.toLowerCase()));
+    setLoading(false);
+  }, [posts, category]);
 
   const cards = filteredPosts.map((post, idx) => {
     return (
@@ -19,10 +26,14 @@ const Category = () => {
 
   return (
     <section className="category">
-      <div className="category__wrapper container">
-        <SectionDivider title={category || ""} />
-        <ul className="category__posts">{cards}</ul>
-      </div>
+      {!loading ? (
+        <div className="category__wrapper container">
+          <SectionDivider title={category || ""} />
+          <ul className="category__posts">{cards}</ul>
+        </div>
+      ) : (
+        <PuffLoader size={100} />
+      )}
     </section>
   );
 };

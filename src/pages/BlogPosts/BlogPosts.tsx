@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { PostCardMedium, SectionDivider } from "../../components";
 import { usePostStore } from "../../state/store";
 import "./BlogPosts.scss";
