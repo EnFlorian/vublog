@@ -1,0 +1,35 @@
+.notification-modal {
+  position: relative;
+  background-color: var(--clr-bg-primary);
+  box-shadow: var(--box-shadow-primary);
+  padding: 1.5rem 2rem 2rem 2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 24rem;
+  align-items: center;
+  border-left: 0.4rem solid var(--clr-accent-primary);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    color: var(--clr-text-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  &__description {
+    color: var(--clr-text-secondary);
+
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+}
