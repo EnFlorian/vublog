@@ -6,6 +6,7 @@
   border-radius: 0.3rem;
   transition: var(--transition-fast);
   box-shadow: var(--box-shadow-primary);
+  color: var(--clr-text-primary);
 
   &:hover {
     transform: translateY(-0.1rem);
