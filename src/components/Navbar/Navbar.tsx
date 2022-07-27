@@ -1,15 +1,23 @@
 import "./Navbar.scss";
-// import { Link } from "react-router-dom";
 import { navLinks } from "../../data";
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const Navbar = () => {
+  let activeLink: Element;
+
   const links = navLinks.map(({ name, path }, idx) => (
-    <li key={idx} className="navbar__nav-link">
+    <li onClick={(e) => handleClick(e)} key={idx} tabIndex={idx} className="navbar__nav-link">
       <Link to={path}>{name}</Link>
     </li>
   ));
+
+  const handleClick = (event: React.MouseEvent) => {
+    // activeLink?.classList.remove("navbar__nav-link--active");
+    // activeLink = event.currentTarget;
+    // event.currentTarget.classList.toggle("navbar__nav-link--active");
+  };
 
   return (
     <header className="navbar">
@@ -20,7 +28,7 @@ const Navbar = () => {
         <nav>
           <ul className="navbar__nav-links">
             {links}
-            <li className="navbar__nav-link">
+            <li className="navbar__theme-button">
               <ThemeSwitch />
             </li>
           </ul>
