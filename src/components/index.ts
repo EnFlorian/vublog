@@ -11,6 +11,7 @@ import SectionDivider from "./SectionDivider/SectionDevider";
 import Sidebar from "./Sidebar/Sidebar";
 import Socials from "./Socials/Socials";
 import ThemeSwitch from "./ThemeSwitch/ThemeSwitch";
+import NotificationModal from "./NotificationModal/NotificationModal";
 
 export {
   BaseButton,
@@ -26,4 +27,5 @@ export {
   Sidebar,
   Socials,
   ThemeSwitch,
+  NotificationModal,
 };
