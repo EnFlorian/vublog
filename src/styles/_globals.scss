@@ -41,22 +41,19 @@
 html[data-theme="dark"] {
   --clr-bg-primary: hsl(218, 23%, 23%);
   --clr-bg-secondary: hsl(220, 26%, 14%);
-  --clr-bg-tertiary: hsl(216, 15%, 52%);
+  --clr-bg-tertiary: hsl(216, 15%, 42%);
 
-  --clr-text-primary: hsl(214, 32%, 91%);
+  --clr-text-primary: hsl(214, 32%, 95%);
   --clr-text-secondary: hsl(210, 20%, 80%);
-  --clr-text-tertiary: hsl(216, 15%, 52%);
+  --clr-text-tertiary: hsl(216, 15%, 55%);
 
   --clr-shadow: hsl(220, 26%, 10%);
   --box-shadow-primary: 1px 1px 8px var(--clr-shadow);
   --box-shadow-hover: 4px 4px 8px var(--clr-shadow);
 
   --clr-accent-primary: hsl(32, 90%, 65%);
-  --clr-accent-secondary: hsl(32, 90%, 65%);
+  --clr-accent-secondary: hsl(32, 90%, 70%);
   --clr-accent-tertiary: hsl(30, 65%, 55%);
-}
-
-.body {
 }
 
 /* Scrollbar */
@@ -146,7 +143,7 @@ html[data-theme="dark"] {
 
   ul li::before {
     content: "\2022";
-    color: var(--clr-accent-1);
+    color: var(--clr-accent-primary);
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -168,7 +165,7 @@ html[data-theme="dark"] {
   ol li::before {
     content: counter(item, decimal) ".";
     counter-increment: item;
-    color: var(--clr-accent-2);
+    color: var(--clr-accent-primary);
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -198,7 +195,7 @@ html[data-theme="dark"] {
   }
 
   blockquote {
-    border-left: 0.3rem solid var(--clr-accent-1);
+    border-left: 0.3rem solid var(--clr-accent-primary);
     padding: 0.5rem 1rem;
     background-color: var(--clr-3);
     border-radius: 0.2rem;
@@ -206,7 +203,7 @@ html[data-theme="dark"] {
   }
 
   blockquote p {
-    color: var(--clr-text-3);
+    color: var(--clr-text-secondary);
   }
 
   pre {
@@ -214,17 +211,17 @@ html[data-theme="dark"] {
   }
 
   code {
-    background-color: var(--clr-2);
+    background-color: var(--clr-bg-tertiary);
     padding: 0.4rem 0.5rem;
     display: block;
     border-radius: 0.3rem;
     font-size: 0.8rem;
     margin: 0.2rem 0;
-    color: var(--clr-text-3);
+    color: var(--clr-text-primary);
   }
 
   a {
-    color: var(--clr-accent-1);
+    color: var(--clr-accent-primary);
     text-decoration: none;
   }
 
@@ -246,28 +243,24 @@ html[data-theme="dark"] {
     border-collapse: collapse;
     width: 100%;
     border-spacing: 0;
-    border: 1px solid var(--clr-text-3);
+    border: 1px solid var(--clr-bg-tertiary);
     margin-bottom: 1rem;
   }
 
   table th {
-    border: 1px solid var(--clr-text-3);
+    border: 1px solid var(--clr-bg-tertiary);
     padding: 0.5rem;
     text-align: left;
     font-weight: bold;
   }
 
   table td {
-    border: 1px solid var(--clr-text-3);
+    border: 1px solid var(--clr-bg-tertiary);
     padding: 0.5rem;
     text-align: left;
   }
 
-  table tr:nth-child(even) {
-    background-color: var(--clr-2);
-  }
-
   table tr:nth-child(odd) {
-    background-color: var(--clr-1);
+    background-color: var(--clr-bg-secondary);
   }
 }
