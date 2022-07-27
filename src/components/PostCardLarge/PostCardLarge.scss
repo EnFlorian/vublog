@@ -18,7 +18,17 @@
   }
 
   &__left-content {
+    max-width: 50%;
+    width: 100%;
     display: flex;
+  }
+
+  &__right-content {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
   }
 
   &__category {
@@ -27,11 +37,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 9rem;
-    height: 2.5rem;
+    max-width: 8rem;
+    height: 2.2rem;
     font-size: 0.8rem;
     font-weight: 500;
     border-radius: 0.8rem;
+    transition: var(--transition-fast);
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   &__title {
@@ -43,14 +58,6 @@
 
   &__text {
     color: var(--clr-text-secondary);
-  }
-
-  &__right-content {
-    min-width: 45%;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   &__details {
@@ -86,5 +93,15 @@
   &__info {
     font-size: 0.9rem;
     color: var(--clr-text-tertiary);
+  }
+}
+
+@media (max-width: 650px) {
+  .post-card-large {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 32rem;
+    padding: 1rem;
   }
 }
