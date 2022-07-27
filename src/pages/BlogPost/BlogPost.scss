@@ -1,0 +1,128 @@
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--clr-bg-secondary);
+
+  &__wrapper {
+    display: flex;
+    padding: 5rem 0 2rem 0;
+    height: 100%;
+    gap: 8rem;
+  }
+
+  &__main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--clr-bg-primary);
+    padding: 2rem 0 0 0;
+    border-radius: 0.4rem;
+    height: auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    color: var(--clr-text-primary);
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: var(--clr-text-primary);
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+
+  &__right-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__footer {
+    justify-self: flex-end;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-bg-tertiary);
+    height: 4.5rem;
+    padding: 0 1rem;
+    border-radius: 0.4rem;
+  }
+
+  &__footer-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__footer-right {
+    display: flex;
+  }
+
+  &__author {
+    color: var(--clr-text-secondary);
+    font-size: 1.1rem;
+    margin-left: 1rem;
+  }
+
+  &__date {
+    color: var(--clr-text-secondary);
+  }
+
+  &__category {
+    color: var(--clr-text-secondary);
+    background-color: var(--clr-bg-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    transition: var(--transition-fast);
+
+    &:hover {
+      color: var(--clr-accent-primary);
+    }
+  }
+
+  &__footer-image-wrapper {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    border: 3px solid var(--clr-accent-primary);
+    overflow: hidden;
+  }
+
+  &__accent {
+    color: var(--clr-accent-primary);
+  }
+}
+
+// Media Queries
+
+@media (max-width: 1200px) {
+  .blog-post {
+    &__wrapper {
+      gap: 4rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .blog-post {
+    padding: 0;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+}
