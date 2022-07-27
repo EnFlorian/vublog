@@ -19,7 +19,7 @@ const Navbar = () => {
         <nav>
           <ul className="navbar__nav-links">
             {links}
-            <li className="navbar__theme-button">
+            <li className="navbar__nav-link">
               <ThemeSwitch />
             </li>
           </ul>
