@@ -1,6 +1,6 @@
 import "./Home.scss";
 import { Fragment } from "react";
-import { BlogSection, HeaderSection, Navbar, Sidebar } from "../../components";
+import { BlogSection, HeaderSection, Navbar, SectionDivider, Sidebar } from "../../components";
 
 const Home = () => {
   return (
