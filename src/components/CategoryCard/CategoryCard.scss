@@ -1,0 +1,43 @@
+.category-card {
+  display: flex;
+  background-color: var(--clr-bg-primary);
+  overflow: hidden;
+  height: 3.5rem;
+  border-radius: 0.3rem;
+  transition: var(--transition-fast);
+  box-shadow: var(--box-shadow-primary);
+
+  &:hover {
+    transform: translateY(-0.1rem);
+  }
+
+  &__left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: var(--clr-bg-tertiary);
+  }
+
+  &__right-content {
+    display: flex;
+    align-items: center;
+    flex: 3;
+  }
+
+  &__name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--clr-text-primary);
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--clr-text-primary);
+  }
+}
