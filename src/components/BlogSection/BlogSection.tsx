@@ -5,6 +5,7 @@ import { usePostStore } from "../../state/store";
 import { useEffect, useState } from "react";
 import { IPost } from "../../state/types";
 import BaseButton from "../BaseButton/BaseButton";
+import { PuffLoader } from "react-spinners";
 
 const BlogSection = () => {
   const { posts } = usePostStore((state) => state);
@@ -33,7 +34,7 @@ const BlogSection = () => {
   return (
     <section className="blog-section">
       <SectionDivider title="Recently Published" />
-      <div className="blog-section__cards-container">{cards}</div>
+      {!loading ? <div className="blog-section__cards-container">{cards}</div> : <PuffLoader size={100} />}
       {renderedPosts.length < posts.length ? (
         <div className="blog-section__button-container">
           <BaseButton name="Load More" variant="secondary" func={loadMore} />
