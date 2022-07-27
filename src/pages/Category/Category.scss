@@ -1,0 +1,24 @@
+.category {
+  display: flex;
+  background-color: var(--clr-bg-secondary);
+  min-height: 100vh;
+
+  &__wrapper {
+    padding: 5rem 0 10rem 0;
+  }
+
+  &__posts {
+    display: grid;
+    gap: 1rem;
+  }
+}
+
+// Media Queries
+
+@media screen and (min-width: 576px) {
+  .category {
+    &__posts {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+}
