@@ -9,11 +9,17 @@
  - Pure (S)CSS
 
 
-## 👩‍💻 Live Demo
-##### Go To something.com
+## 👩‍💻 Live Website
 
-[Live Preview](enflorian.com)
+### [Vublog (Vercel)](vublog.vercel.app)
 
+## 🖼 Offline Demo
+
+### Desktop Preview
+![Vublog](/demo/vublog-desktop-demo.gif)
+
+### Offline Preview
+![Vublog](/demo/vublog-mobile-demo.gif)
 
 
 ## ⚒ Installation/Setup
