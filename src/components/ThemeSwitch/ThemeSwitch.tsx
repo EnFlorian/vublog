@@ -17,7 +17,7 @@ const ThemeSwitch = () => {
   };
 
   return (
-    <button className="theme-switch" onClick={toggleThemeChange}>
+    <button aria-label="Theme Switch" className="theme-switch" onClick={toggleThemeChange}>
       {isDarkMode === false ? <FaMoon /> : <BsSunFill />}
     </button>
   );
