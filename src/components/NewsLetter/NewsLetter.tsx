@@ -7,11 +7,6 @@ const NewsLetter = () => {
   const { openNotificationModal } = useUIStore((state) => state);
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    openNotificationModal();
-  };
-
   return (
     <section className="newsletter">
       <div className="newsletter__wrapper">
