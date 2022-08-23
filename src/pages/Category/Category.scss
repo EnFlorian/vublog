@@ -1,9 +1,9 @@
 .category {
+  align-items: center;
+  background-color: var(--clr-bg-secondary);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: var(--clr-bg-secondary);
   min-height: 100vh;
 
   &__wrapper {

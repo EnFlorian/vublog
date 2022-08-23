@@ -80,14 +80,14 @@ html[data-theme="dark"] {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
+  width: 1200px;
 }
 
 @media (max-width: 1200px) {
   .container {
-    width: calc(100% - 2rem);
     margin: 1rem;
+    width: calc(100% - 2rem);
   }
 }
 
@@ -142,12 +142,12 @@ html[data-theme="dark"] {
   }
 
   ul li::before {
-    content: "\2022";
     color: var(--clr-accent-primary);
-    font-weight: bold;
+    content: "\2022";
     display: inline-block;
-    width: 1em;
+    font-weight: bold;
     margin-left: 0.1rem;
+    width: 1em;
 
     &:first-child {
       margin-left: 0;
@@ -163,13 +163,13 @@ html[data-theme="dark"] {
   }
 
   ol li::before {
+    color: var(--clr-accent-primary);
     content: counter(item, decimal) ".";
     counter-increment: item;
-    color: var(--clr-accent-primary);
-    font-weight: bold;
     display: inline-block;
-    width: 1em;
+    font-weight: bold;
     margin-left: 0.1rem;
+    width: 1em;
 
     &:first-child {
       margin-left: 0;
@@ -182,24 +182,24 @@ html[data-theme="dark"] {
     &::before {
       content: "";
       display: inline-block;
-      width: 1em;
       margin-left: 0.1rem;
+      width: 1em;
     }
 
     &::after {
       content: "";
       display: inline-block;
-      width: 1em;
       margin-left: 0.1rem;
+      width: 1em;
     }
   }
 
   blockquote {
-    border-left: 0.3rem solid var(--clr-accent-primary);
-    padding: 0.5rem 1rem;
     background-color: var(--clr-3);
+    border-left: 0.3rem solid var(--clr-accent-primary);
     border-radius: 0.2rem;
     margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
   }
 
   blockquote p {
@@ -212,12 +212,12 @@ html[data-theme="dark"] {
 
   code {
     background-color: var(--clr-bg-tertiary);
-    padding: 0.4rem 0.5rem;
-    display: block;
     border-radius: 0.3rem;
+    color: var(--clr-text-primary);
+    display: block;
     font-size: 0.8rem;
     margin: 0.2rem 0;
-    color: var(--clr-text-primary);
+    padding: 0.4rem 0.5rem;
   }
 
   a {
@@ -230,28 +230,28 @@ html[data-theme="dark"] {
   }
 
   img {
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
   }
 
   iframe {
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
   }
 
   table {
     border-collapse: collapse;
-    width: 100%;
     border-spacing: 0;
     border: 1px solid var(--clr-bg-tertiary);
     margin-bottom: 1rem;
+    width: 100%;
   }
 
   table th {
     border: 1px solid var(--clr-bg-tertiary);
+    font-weight: bold;
     padding: 0.5rem;
     text-align: left;
-    font-weight: bold;
   }
 
   table td {

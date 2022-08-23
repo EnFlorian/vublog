@@ -1,46 +1,46 @@
 .blog-post {
+  align-items: center;
+  background-color: var(--clr-bg-secondary);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100%;
   justify-content: center;
   min-height: 100vh;
-  height: 100%;
-  background-color: var(--clr-bg-secondary);
 
   &__wrapper {
     display: flex;
-    padding: 5rem 0 2rem 0;
-    height: 100%;
     gap: 8rem;
+    height: 100%;
+    padding: 5rem 0 2rem 0;
   }
 
   &__main-content {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
   }
 
   &__left-content {
+    background-color: var(--clr-bg-primary);
+    border-radius: 0.4rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--clr-bg-primary);
-    padding: 2rem 0 0 0;
-    border-radius: 0.4rem;
     height: auto;
+    justify-content: space-between;
+    padding: 2rem 0 0 0;
   }
 
   &__content {
+    color: var(--clr-text-primary);
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
-    color: var(--clr-text-primary);
   }
 
   &__title {
-    font-size: 2rem;
     color: var(--clr-text-primary);
+    font-size: 2rem;
     margin-bottom: 1rem;
     padding: 0 1rem;
   }
@@ -51,21 +51,21 @@
   }
 
   &__footer {
-    justify-self: flex-end;
-    width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
     background-color: var(--clr-bg-tertiary);
-    height: 4.5rem;
-    padding: 0 1rem;
     border-radius: 0.4rem;
+    display: flex;
+    height: 4.5rem;
+    justify-content: center;
+    justify-self: flex-end;
+    padding: 0 1rem;
+    width: 100%;
   }
 
   &__footer-left {
-    flex: 1;
-    display: flex;
     align-items: center;
+    display: flex;
+    flex: 1;
   }
 
   &__footer-right {
@@ -83,10 +83,10 @@
   }
 
   &__category {
-    color: var(--clr-text-secondary);
     background-color: var(--clr-bg-secondary);
-    padding: 0.5rem 1rem;
     border-radius: 0.3rem;
+    color: var(--clr-text-secondary);
+    padding: 0.5rem 1rem;
     transition: var(--transition-fast);
 
     &:hover {
@@ -95,11 +95,11 @@
   }
 
   &__footer-image-wrapper {
-    height: 3.5rem;
-    width: 3.5rem;
     border-radius: 50%;
     border: 3px solid var(--clr-accent-primary);
+    height: 3.5rem;
     overflow: hidden;
+    width: 3.5rem;
   }
 
   &__accent {

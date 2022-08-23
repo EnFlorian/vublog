@@ -1,49 +1,49 @@
 .newsletter {
+  align-items: center;
   background-color: var(--clr-bg-primary);
-  box-shadow: var(--box-shadow-primary);
   border-radius: 0.3rem;
+  box-shadow: var(--box-shadow-primary);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: 1.5rem 1rem;
 
   &__wrapper {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     max-width: 35rem;
   }
 
   &__text {
-    margin-bottom: 1rem;
-    font-size: 1rem;
     color: var(--clr-text-secondary);
+    font-size: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
   }
 
   &__form {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 90%;
   }
 
   &__input {
-    color: var(--clr-text-primary);
-    border: none;
-    border-radius: 0.3rem;
     background-color: var(--clr-bg-tertiary);
-    margin-bottom: 1rem;
-    width: 100%;
-    height: 3rem;
-    padding: 0.4rem 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    color: var(--clr-text-primary);
     font-size: 1rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.5rem;
+    width: 100%;
 
     &:focus {
-      outline: none;
       border-bottom: 4px solid var(--clr-accent-primary);
+      outline: none;
     }
 
     &::placeholder {
@@ -53,16 +53,16 @@
   }
 
   &__button {
-    border: none;
-    border-radius: 0.3rem;
     background-color: var(--clr-accent-primary);
+    border-radius: 0.3rem;
+    border: none;
     box-shadow: var(--box-shadow-primary);
     color: var(--clr-text-neutral);
-    font-size: 1rem;
-    width: 60%;
-    padding: 0.5rem 1rem;
     cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
     transition: var(--transition-fast);
+    width: 60%;
 
     &:hover {
       transform: scale(1.02);

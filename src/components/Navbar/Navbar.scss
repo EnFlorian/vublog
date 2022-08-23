@@ -1,13 +1,13 @@
 .navbar {
-  position: relative;
-  display: flex;
   align-items: center;
   background-color: var(--clr-bg-primary);
+  display: flex;
   height: var(--navbar-height);
+  position: relative;
 
   &__wrapper {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
   }
 
@@ -23,16 +23,16 @@
   }
 
   &__nav-link {
-    color: var(--clr-text-secondary);
-    display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 1rem;
+    color: var(--clr-text-secondary);
+    cursor: pointer;
+    display: flex;
     font-size: 1.2rem;
     font-weight: 500;
+    justify-content: center;
+    margin-left: 1rem;
     text-decoration: none;
     transition: var(--transition-normal);
-    cursor: pointer;
 
     &:focus {
       color: var(--clr-accent-primary);
@@ -59,10 +59,10 @@
 
 @media (max-width: 485px) {
   .navbar {
-    width: 100%;
     box-shadow: 0 2px 2px -2px var(--clr-shadow);
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 100;
 
     &__wrapper {

@@ -1,44 +1,44 @@
 .category-card {
-  display: flex;
   background-color: var(--clr-bg-primary);
-  overflow: hidden;
-  height: 3.5rem;
   border-radius: 0.3rem;
-  transition: var(--transition-fast);
   box-shadow: var(--box-shadow-primary);
   color: var(--clr-text-primary);
+  display: flex;
+  height: 3.5rem;
+  overflow: hidden;
+  transition: var(--transition-fast);
 
   &:hover {
     transform: translateY(-0.1rem);
   }
 
   &__left-content {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex: 1;
     background-color: var(--clr-bg-tertiary);
+    display: flex;
+    flex: 1;
+    justify-content: center;
   }
 
   &__right-content {
-    display: flex;
     align-items: center;
+    display: flex;
     flex: 3;
   }
 
   &__name {
+    color: inherit;
+    cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
-    color: inherit;
     margin-left: 1rem;
-    cursor: pointer;
   }
 
   &__icon {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 2rem;
     color: var(--clr-text-primary);
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
   }
 }

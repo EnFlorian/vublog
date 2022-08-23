@@ -1,20 +1,20 @@
 .notification-modal {
-  position: relative;
+  align-items: center;
   background-color: var(--clr-bg-primary);
-  box-shadow: var(--box-shadow-primary);
-  padding: 1.5rem 2rem 2rem 2rem;
+  border-left: 0.4rem solid var(--clr-accent-primary);
   border-radius: 0.3rem;
+  box-shadow: var(--box-shadow-primary);
   display: flex;
   flex-direction: column;
   max-width: 24rem;
-  align-items: center;
-  border-left: 0.4rem solid var(--clr-accent-primary);
+  padding: 1.5rem 2rem 2rem 2rem;
+  position: relative;
 
   &__content {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   &__title {
@@ -27,9 +27,8 @@
 
   &__description {
     color: var(--clr-text-secondary);
-
-    text-align: center;
     font-size: 1.1rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 }

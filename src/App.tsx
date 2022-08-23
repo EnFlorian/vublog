@@ -9,7 +9,7 @@ const modalContent = {
 };
 
 function App() {
-  const { isNotificationModalOpen, closeNotificationModal } = useUIStore((state) => state);
+  const { isNotificationModalOpen } = useUIStore((state) => state);
 
   return (
     <Router>
