@@ -18,7 +18,11 @@ const BlogSection = () => {
   }, []);
 
   const cards = renderedPosts.map((post, idx) => {
-    return <PostCardLarge key={idx} {...post} />;
+    return (
+      <li key={idx}>
+        <PostCardLarge {...post} />
+      </li>
+    );
   });
 
   const loadMore = () => {
@@ -34,7 +38,7 @@ const BlogSection = () => {
   return (
     <section className="blog-section">
       <SectionDivider title="Recently Published" />
-      {!loading ? <div className="blog-section__cards-container">{cards}</div> : <PuffLoader size={100} />}
+      {!loading ? <ul className="blog-section__cards-container">{cards}</ul> : <PuffLoader size={100} />}
       {renderedPosts.length < posts.length ? (
         <div className="blog-section__button-container">
           <BaseButton name="Load More" variant="secondary" func={loadMore} />
