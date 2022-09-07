@@ -18,7 +18,7 @@
 ### Desktop Preview
 ![Vublog](/demo/vublog-desktop-demo.gif)
 
-### Offline Preview
+### Mobile Preview
 ![Vublog](/demo/vublog-mobile-demo.gif)
 
 
